@@ -31,4 +31,4 @@ const Match=(UserInput,Computer)=>
 }
 
 let Winner= Match(Computer,UserInput)
-console.log(`Computer: ${Computer} and You: ${UserInput} /n And the Winner is ${Winner}`)
+console.log(`Computer: ${Computer} and You: ${UserInput} /n And the Winner is ${Winner.toUpperCase}`)
