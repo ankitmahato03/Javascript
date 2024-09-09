@@ -26,4 +26,4 @@ function dateMethods() {
   
   // Example Usage for Date Methods
   dateMethods();
-  
+console.log("ankit mahato")  
