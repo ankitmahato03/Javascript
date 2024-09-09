@@ -12,3 +12,12 @@ const number = 1245.00
 
 console.log(number.toPrecision(2))
 //if you use precision keep in mind that the value goes round of after the number which you passed in precision in this case which is 2
+
+
+const myAccountBal=124512541454
+
+console.log(myAccountBal.toLocaleString('en-IN'));
+
+console.log(Math.random());
+
+console.log(Math.floor(Math.random()*10)+1);
