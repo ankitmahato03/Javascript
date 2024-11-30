@@ -1,2 +1,10 @@
+hello from a.txt i am the new txt from a.txt
+const fs =require("fs")
 
- hello from a.txt i am the new txt from a.txt
+const redfile =()=>{
+fs.Readfile("a.txt","utf-8",()=>(err,data){
+
+console.log(data);
+})
+
+}
