@@ -9,4 +9,12 @@ app.post("/hand", (req, res) => {
 
   res.send(`your kidney is avaible ${klength}`);
 });
+
+//global catches
+app.use((err, req, res, next) => {
+  res.status(404).send({
+    massage: "something happens with our servers ",
+  });
+});
+
 app.listen(3000);
