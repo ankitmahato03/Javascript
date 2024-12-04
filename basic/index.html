@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .inputb {
+      background-color: black;
+      color: white;
+      margin: 2px;
+    }
+  </style>
+  <script>
+    function calculatesum() {
+      //   const element = document.getElementById("finalsum");
+      //   console.log(element);
+      const a = document.getElementById("fstnumber").value;
+      const b = document.getElementById("sndnumner").value;
+      //   element.innerHTML =
+      // "Your answer is " + (parseInt(fnumber) + parseInt(snumber));
+      fetch("https://sum-server.100xdevs.com/sum?a=" + a + "&b=" + b).then(
+        function (res) {
+         
+          res.text().then(function (ans) {
+            document.getElementById("finalsum").innerHTML=ans;
+        });
+        }
+      );
+    }
+  </script>
+  <body>
+    <input type="text" placeholder="Fnumber" class="inputb" id="fstnumber" />
+    <br />
+    <input
+      type="text"
+      placeholder="snumber"
+      class="inputb"
+      id="sndnumner"
+    /><br />
+    <button onclick="calculatesum()" type="button">calculate</button>
+    <div id="finalsum"></div>
+  </body>
+</html>
