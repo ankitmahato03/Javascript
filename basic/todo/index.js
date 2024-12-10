@@ -35,11 +35,18 @@ const updateDom = (state) => {
   }
 };
 
-updateDom([{
-  title: "hellotitle",
-  description: "hello desc",
-  id: 1,
-}]);
+updateDom([
+  {
+    title: "hellotitle",
+    description: "hello desc",
+    id: 1,
+  },
+  {
+    title: "hellotitle2",
+    description: "hello desc2",
+    id: 2,
+  },
+]);
 
 const addtodo = () => {
   const title = document.getElementById("title").value;
