@@ -4,19 +4,27 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [Title, setTitle] = useState("ankit 1");
-
   return (
     <>
-      <button on>Click here to change the title</button>
-      <Header title={title}></Header>
-      <Header title="ankit2"></Header>
+      <CerdWrapper innerComponant={<Textconfig />} />
+      <CerdWrapper innerComponant={<Textconfig2 />} />
     </>
   );
 }
 
-function Header({ title }) {
-  return <div>{title}</div>;
+function Textconfig() {
+  return <>hi there</>;
 }
 
+function Textconfig2() {
+  return <>hi there2</>;
+}
+
+function CerdWrapper({ innerComponant }) {
+  return (
+    <div style={{ border: "2px solid red", margin: 10, padding: 10 }}>
+      {innerComponant}
+    </div>
+  );
+}
 export default App;
