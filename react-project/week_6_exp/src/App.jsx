@@ -8,6 +8,7 @@ function App() {
     <>
       <CerdWrapper innerComponant={<Textconfig />} />
       <CerdWrapper innerComponant={<Textconfig2 />} />
+      <CerdWrapper innerComponant={<Textconfig2 />} />
     </>
   );
 }
