@@ -9,7 +9,7 @@ function startGame() {
     const userGuess = parseInt(prompt("Guess a number between 1 and 100:"));
 
     if (isNaN(userGuess)) {
-      alert("Please enter a valid number.");
+      alert("Please enter a valid number:");
     } else {
       attempts++;
       checkGuess(userGuess);
